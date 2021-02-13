@@ -8,7 +8,7 @@ It then calculates the dimensions of a new box whose width is 2 and height is 1.
 
 The program continues to make new boxes expanding the width, so long as its value does not exced that of the depth.
 
-When it comes to this point, it increases the height by 1 and sets the value of width to the new height value. (21\*1\*21) -> (2\*2\*124)
+When the value of width reaches the value of depth, it increases the height by 1 and sets width to the new height value. (21\*1\*21) -> (2\*2\*124)
 
 When the width and depth match, it sets the width to the new icreased height instead of setting it to 1, so that it doesn't repeat previous dimensions in a rearanged order. (8\*5\*35) x (5\*8\*35)
 
