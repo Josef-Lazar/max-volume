@@ -8,7 +8,6 @@ volume = width * height * depth
 surface = 2 * height * depth + 2 * height * width + 2 * depth * width
 print(f'''We are told to make a box using 1000 cm^2 of material, such that it has the greatest possible volume.
 What length should the sides be, assuming they must be integers?
-
 Starting values:
 width: {width}
 height: {height}
@@ -18,7 +17,7 @@ volume: {volume}
 ''')
 
 while height < depth:
-    if width < depth:
+    if width < depth and width + 1 != depth:
         width += 1
         depth = math.floor((500 - height * width) / (height + width))
         if volume < width * height * depth:
@@ -48,7 +47,6 @@ depth: {max_depth}
 surface: {max_surface}
 volume: {volume}
 The box with the greatest volume will have sides the are {max_width}, {max_height}, and {max_depth} cm long.
-
 You can input 'boxcalc(#, #, #)' to see the surface and volume of any other box''')
 
 
