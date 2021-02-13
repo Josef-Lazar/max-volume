@@ -19,6 +19,5 @@ The depth is always the longest dimension (except when tied with width) and heig
 The height continue to grow, while the depth continues to contract until the two are equal. At this point every possible box shapes that uses all (or close to all) the surface area has been tested.
 
 It then prints the dimensions of the box with the greates volume.
--
 
 The program also includes a function called boxcalc(#, #, #) which takes in the dimensions of a six sided box and returns the surface and volume of that box.
